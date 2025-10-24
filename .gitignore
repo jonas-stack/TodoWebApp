@@ -1,0 +1,60 @@
+﻿# --- .NET and Visual Studio / Rider ---
+bin/
+obj/
+out/
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+*.vscode/
+*.vs/
+*.idea/
+*.ionide/
+*.resharper/
+*.Rider/
+
+# --- Build artifacts ---
+/artifacts/
+/publish/
+/TestResults/
+/coverage/
+/packages/
+/logs/
+
+# --- OS-specific ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- Tooling ---
+/node_modules/
+/dist/
+/bower_components/
+/.terraform/
+/.flycheck*
+/*.db
+*.sqlite
+
+# --- Environment / secrets ---
+.env
+.env.*
+appsettings.*.local.json
+
+# --- Rider-specific (safe) ---
+/.idea/
+/.idea.*
+/workspace.xml
+/shelf/
+/dataSources/
+/dataSources.local.xml
+/httpRequests/
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+
+# --- Optional ---
+*.bak
+*.tmp
+*.swp
+*.lock
