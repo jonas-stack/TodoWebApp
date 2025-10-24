@@ -1,6 +1,14 @@
-﻿namespace TodoApp.Infrastructure;
+﻿using Microsoft.Extensions.DependencyInjection;
+using TodoApp.Application.Ports.Outgoing;
+using TodoApp.Infrastructure.Repositories;
 
-public class InfrastructureModule
+namespace TodoApp.Infrastructure;
+
+public static class InfrastructureModule
 {
-    
+    public static IServiceCollection AddInfrastructureModule(this IServiceCollection services)
+    {
+        services.AddScoped<ITodoRepository, TodoRepository>();
+        return services;
+    }
 }
